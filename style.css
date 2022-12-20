@@ -22,3 +22,18 @@ a{
 h1,h2,h3,h4,h5,h6,p{
     margin: 0;
 }
+
+/* ! header start */
+.global-notification{
+    background-color: #1367ef;
+    color: white;
+    padding: 14px 0;
+    text-align: center;
+    font-size: 12px;
+}
+
+.global-notification a{
+    color: white;
+    font-weight: 600;
+}
+/* ! header end */

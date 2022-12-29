@@ -36,6 +36,70 @@ p {
   margin: 0 auto;
 }
 
+
+.logo {
+  font-size: 24px;
+  font-weight: 500;
+  display: flex;
+}
+
+button{
+  cursor: pointer;
+  border: none;
+}
+
+.btn{
+  display: inline-block;
+  line-height: 40px;
+  padding: 0 25px;
+  font-weight: 500;
+  border: 1px solid black;
+  transition: all .2s ease;
+}
+
+.btn-sm{
+  line-height: 33px;
+}
+
+.btn-md{
+  line-height: 40px;
+}
+
+.btn-lg{
+  line-height: 45px;
+}
+
+.btn-primary{
+  background-color: #1367ef;
+  color: #fff;
+  border-color:#1367ef
+}
+
+.btn-primary:hover{
+  background-color: #fff;
+  color: #1367ef;
+}
+
+input[type="text"],
+input[type="password"],
+input[type="number"],
+input[type="email"]{
+  outline: none;
+  border: 1px solid #dee0ea;
+  padding: 8px 8px 8px 15px;
+}
+
+
+input[type="text"]:focus,
+input[type="password"]:focus,
+input[type="number"]:focus,
+input[type="email"]:focus{
+  border-color: gray;
+}
+
+input[type="number"]::-webkit-inner-spin-button{
+  opacity: 1;
+}
 /* ! base end */
 
 /* ! header start */
@@ -63,11 +127,7 @@ header {
   align-items: center;
 }
 
-.header-left .logo {
-  font-size: 24px;
-  font-weight: 500;
-  display: flex;
-}
+
 
 .header-wrapper {
   display: flex;
@@ -256,7 +316,7 @@ header .menu-dropdown-content a:hover {
   margin-bottom: 10px;
 }
 
-.megamenu-wrapper .megamenu-single-button{
+.megamenu-wrapper .megamenu-single-button {
   margin-top: 5px;
 }
 

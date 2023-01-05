@@ -95,7 +95,8 @@
     .slider .slider-item {
         height: calc(100vh - 155px);
     }
-    .slider-buttons{
+
+    .slider-buttons {
         display: none;
     }
 }

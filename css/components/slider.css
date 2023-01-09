@@ -9,6 +9,8 @@
     align-items: center;
 }
 
+
+
 .slider .slider-item img {
     position: absolute;
     top: 0;
@@ -27,6 +29,11 @@
 .slider-item .slider-heading {
     font-size: 60px;
     font-weight: 500;
+}
+
+.slider-item a {
+    position: relative;
+    z-index: 1;
 }
 
 .slider-buttons {

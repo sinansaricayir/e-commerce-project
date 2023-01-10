@@ -21,3 +21,33 @@
 }
 
 /* ! categories end */
+
+/* ! products start */
+.products {
+    margin-bottom: 40px;
+}
+
+.products .product-list {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 20px;
+}
+
+/* products responsive */
+@media(max-width:777px) {
+    .products .product-list {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 20px;
+    }
+}
+
+@media(max-width:578px) {
+    .products .product-list {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+}
+
+/* ! products end */

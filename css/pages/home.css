@@ -59,8 +59,41 @@
 .campaigns .campaigns-wrapper {
     display: flex;
     gap: 30px;
-    margin-top: 30px;
+    margin: 30px;
     flex-wrap: wrap;
 }
 
+/* responsive */
+
+@media(max-width:765px) {
+    .campaigns .campaign-item {
+        width: 100%;
+        flex: unset !important;
+
+    }
+}
+
 /* ! campaigns end */
+
+
+/* ! blogs start */
+
+.blogs {
+    margin-bottom: 30px;
+}
+
+.blogs .blog-list {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 30px;
+}
+
+/* responsive */
+
+@media(max-width:770px) {
+    .blogs .blog-list {
+        grid-template-columns: 1fr !important;
+    }
+}
+
+/* ! blogs end */

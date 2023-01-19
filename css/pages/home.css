@@ -33,25 +33,6 @@
     gap: 20px;
 }
 
-/* products responsive */
-
-@media(max-width:1210px) {
-    .products .product-list {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        gap: 20px;
-    }
-}
-
-
-@media(max-width:578px) {
-    .products .product-list {
-        display: grid;
-        grid-template-columns: 1fr;
-        gap: 20px;
-    }
-}
-
 /* ! products end */
 
 
@@ -63,21 +44,10 @@
     flex-wrap: wrap;
 }
 
-/* responsive */
-
-@media(max-width:765px) {
-    .campaigns .campaign-item {
-        width: 100%;
-        flex: unset !important;
-
-    }
-}
-
 /* ! campaigns end */
 
 
 /* ! blogs start */
-
 .blogs {
     margin-bottom: 30px;
 }
@@ -88,12 +58,83 @@
     gap: 30px;
 }
 
-/* responsive */
+/* ! blogs end */
+
+
+/*! policy start  */
+.policy {
+    margin: 20px;
+}
+
+.policy .policy-list {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.policy .policy-list .policy-item {
+    display: flex;
+    align-items: center;
+
+}
+
+.policy-list .policy-item i {
+    font-size: 50px;
+    margin-right: 10px;
+}
+
+.policy-list .policy-item .policy-texts {
+    display: flex;
+    flex-direction: column;
+}
+
+.policy-list .policy-item .policy-texts strong {
+    font-weight: 600;
+}
+
+
+.policy-list .policy-item .policy-texts span {
+    font-size: 12px;
+}
+
+/* ! policy end */
+
+
+/*  responsive */
+
+@media(max-width:1210px) {
+    .products .product-list {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 20px;
+    }
+}
+
 
 @media(max-width:770px) {
     .blogs .blog-list {
         grid-template-columns: 1fr !important;
     }
+
+    .campaigns .campaign-item {
+        width: 100%;
+        flex: unset !important;
+
+    }
+
+    .policy .policy-list {
+        display: grid;
+        gap: 20px;
+        grid-template-columns: 1fr 1fr;
+    }
 }
 
-/* ! blogs end */
+
+@media(max-width:578px) {
+    .products .product-list {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+}

@@ -127,6 +127,27 @@
         gap: 20px;
         grid-template-columns: 1fr 1fr;
     }
+
+    .footer .subscribe-contact-wrapper {
+        flex-direction: column;
+        row-gap: 25px;
+    }
+
+    .widgets-row .footer-widgets .brand-info {
+        margin-bottom: 30px;
+    }
+
+    .footer-widgets .brand-info .footer-desc {
+        width: 100%;
+    }
+
+    .widgets-row .footer-widgets>div {
+        flex: unset !important;
+    }
+
+
+
+
 }
 
 

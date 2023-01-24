@@ -1,0 +1,124 @@
+.footer {
+    margin-top: 40px;
+}
+
+/* ! subscribe start */
+.footer .subscribe-contact-row {
+    background-color: #000;
+    color: white;
+    padding: 80px 0;
+}
+
+
+.footer .subscribe-contact-wrapper {
+    display: flex;
+    justify-content: space-between;
+    column-gap: 200px;
+}
+
+.footer .subscribe-title,
+.footer .contact-title {
+    font-size: 30px;
+    max-width: 500px;
+    font-weight: 500;
+    line-height: 1.2;
+}
+
+
+.footer .subscribe-desc,
+.footer .contact-desc {
+    font-size: 14px;
+    opacity: 0.6;
+    margin-top: 5px;
+}
+
+.footer .footer-subscribe-bottom,
+.footer .footer-contact-bottom {
+    margin-top: 40px;
+}
+
+
+.footer .footer-subscribe-bottom form {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.footer .footer-subscribe-bottom form>input {
+    flex: 1;
+    height: 48px;
+    border: none;
+}
+
+.footer .footer-subscribe-bottom form>button {
+    height: 48px;
+    border-color: #fff;
+    background-color: #000;
+    color: #fff;
+
+}
+
+.footer .privacy-text,
+.footer .privacy-text a {
+    font-size: 10px;
+    color: #75767c;
+    margin-top: 5px;
+    font-weight: 500;
+}
+
+.footer .footer-contact-bottom .download-app {
+    display: flex;
+    align-items: center;
+    column-gap: 10px;
+    transition: all 0.5s ease-in;
+}
+
+/* ! subscribe end */
+
+
+/* ! widgets start */
+.widgets-row {
+    padding: 60px 0;
+    border: 1px solid #dee0ea;
+}
+
+.widgets-row .footer-widgets {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.widgets-row .footer-widgets>div {
+    flex: 1;
+}
+
+.widgets-row .footer-widgets .brand-info {
+    flex: 3;
+}
+
+.footer-widgets .brand-info .footer-desc {
+    width: 400px;
+    font-size: 14px;
+    margin: 15px 0;
+}
+
+.footer-widgets .brand-info .footer-contact {
+    font-size: 14px;
+}
+
+.footer-widgets .widget-nav-menu h4 {
+    font-size: 15px;
+    font-weight: 600;
+}
+
+.footer-widgets .widget-nav-menu ul {
+    margin-top: 20px;
+    font-size: 13px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 5px;
+}
+
+
+/* ! widgets end */

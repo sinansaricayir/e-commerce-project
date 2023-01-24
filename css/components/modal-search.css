@@ -149,18 +149,3 @@
 }
 
 /* ! modal search end */
-
-
-
-/* search responsive */
-
-@media(max-width:992px) {
-
-    .modal-search .modal-wrapper {
-        max-width: 370px;
-    }
-
-    .modal-search .results {
-        grid-template-columns: 1fr;
-    }
-}

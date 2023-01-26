@@ -178,6 +178,16 @@
         margin-left: unset;
     }
 
+    .contact .contact-bottom .contact-texts {
+        width: 100%;
+    }
+
+
+    .contact .contact-bottom .contact-elements {
+        flex-direction: column;
+        row-gap: 50px;
+    }
+
 }
 
 
@@ -240,6 +250,10 @@
         display: grid;
         grid-template-columns: 1fr;
         gap: 20px;
+    }
+
+    .contact .contact-bottom .contact-form {
+        flex-direction: column;
     }
 
 }

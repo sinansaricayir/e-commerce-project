@@ -184,6 +184,7 @@ header .menu-dropdown-content a:hover {
     width: 100%;
     display: flex;
     justify-content: center;
+    z-index: 1;
 }
 
 .megamenu-wrapper {

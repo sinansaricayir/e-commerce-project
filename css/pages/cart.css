@@ -1,0 +1,123 @@
+.cart-page {
+    margin: 30px 0;
+}
+
+.cart-page-wrapper {
+    display: flex;
+    justify-content: space-between;
+}
+
+/* ! cart form start */
+
+/* ? progress start */
+.cart-form {
+    flex-basis: 60%;
+}
+
+.cart-form .free-progress-bar {
+    border: 1px solid #dee0ea;
+    padding: 20px;
+    width: 100%;
+}
+
+.cart-form .progress-bar-title {
+    font-size: 12px;
+}
+
+.cart-form .progress-bar-title strong {
+    color: #ee403d;
+}
+
+.cart-form .progress-bar {
+    width: 100%;
+    height: 6px;
+    background-color: #f2f3f5;
+    border-radius: 20px;
+    margin-top: 8px;
+    position: relative;
+}
+
+.cart-form .progress-bar .progress {
+    width: 30%;
+    height: 6px;
+    background-color: #ee403d;
+    display: inline-block;
+    position: absolute;
+    border-radius: 20px;
+}
+
+/* ? progress end */
+
+
+/* ? table start */
+.cart-form table img {
+    width: 60px;
+}
+
+.cart-form table> :not(caption) *>* {
+    padding: 8px 0;
+    text-align: center;
+}
+
+.cart-form table {
+    border-collapse: collapse;
+    width: 100%;
+    margin-top: 30px;
+}
+
+.cart-form table thead th {
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.cart-form table tbody {
+    border-top: 1px solid #dee0ea;
+}
+
+.cart-form table tbody .cart-item {
+    border-bottom: 1px solid #dee0ea;
+}
+
+.cart-item .cart-image {
+    position: relative;
+}
+
+.cart-item .cart-image .bi-x {
+    font-size: 13px;
+    position: absolute;
+    left: 12px;
+    top: 8px;
+    background-color: #ee403d;
+    color: white;
+    border-radius: 100%;
+    height: 14px;
+    width: 14px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+/* ? table end */
+
+/* ? action start */
+.cart-form .action-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 15px;
+    margin-bottom: 10%;
+}
+
+.action-wrapper .coupon button {
+    margin-left: 10px;
+}
+
+.action-wrapper .coupon input {
+    height: 42px;
+}
+
+/* ? action end */
+
+
+/* ! cart form end */

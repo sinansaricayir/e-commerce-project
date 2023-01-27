@@ -79,6 +79,18 @@ button {
     border-color: #1367ef
 }
 
+.btn-red{
+    background-color: #ee403d;
+    color: #fff;
+    border-color: #ee403d
+}
+
+.btn-black{
+    background-color: #000000;
+    color: #fff;
+    border-color: #000000
+}
+
 .btn-primary:hover {
     background-color: #fff;
     color: #1367ef;

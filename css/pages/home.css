@@ -188,6 +188,10 @@
         row-gap: 50px;
     }
 
+    .account-wrapper {
+        flex-direction: column;
+    }
+
 }
 
 

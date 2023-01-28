@@ -126,6 +126,10 @@
     .modal-search .results {
         grid-template-columns: 1fr;
     }
+
+    .cart-page-wrapper {
+        flex-direction: column;
+    }
 }
 
 

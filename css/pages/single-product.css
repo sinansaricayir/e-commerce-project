@@ -5,3 +5,8 @@
 .single-content {
     margin: 30px 0;
 }
+
+.single-content .site-main{
+    display: flex;
+    justify-content: space-between;
+}

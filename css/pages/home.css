@@ -130,6 +130,14 @@
     .cart-page-wrapper {
         flex-direction: column;
     }
+
+    .site-main .cart-button input {
+        flex: 1;
+    }
+
+    .site-main .cart-button button {
+        flex: 2;
+    }
 }
 
 
@@ -195,6 +203,15 @@
 
     .account-wrapper {
         flex-direction: column;
+    }
+
+    .site-main {
+        flex-direction: column;
+    }
+
+    .site-main .product-gallery,
+    .site-main .product-info {
+        width: 100%;
     }
 
 }
@@ -263,6 +280,14 @@
 
     .contact .contact-bottom .contact-form {
         flex-direction: column;
+    }
+
+    .site-main .cart-button input {
+        flex: 1;
+    }
+
+    .site-main .cart-button button {
+        flex: 2;
     }
 
 }

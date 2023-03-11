@@ -18,6 +18,7 @@
 @import url(components/single-products/product-gallery.css);
 @import url(components/single-products/product-info.css);
 @import url(components/single-products/product-tabs.css);
+@import url(components/reviews.css);
 
 /* ! pages */
 @import url(pages/home.css);

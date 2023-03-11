@@ -1,0 +1,49 @@
+/* ! comment item start */
+.tab-panel-reviews .comment-item {
+    display: flex;
+    align-items: center;
+    column-gap: 15px;
+}
+
+
+.tab-panel-reviews .comment-item .comment-text {
+    display: flex;
+    flex-direction: column;
+    row-gap: 6px;
+}
+
+.tab-panel-reviews .comment-item .comment-text .comment-meta {
+    font-size: 12px;
+}
+
+.tab-panel-reviews .comment-item .comment-text .comment-description {
+    font-size: 14px;
+}
+
+.tab-panel-reviews .comment-item .comment-stars {
+    display: flex;
+}
+
+.tab-panel-reviews .comment-item .comment-stars i {
+    color: gold;
+    font-size: 12px;
+}
+
+.tab-panel-reviews .comment-item .comment-avatar img {
+    border-radius: 50%;
+    display: flex;
+}
+
+
+.tab-panel-reviews .comment-list {
+    display: flex;
+    flex-direction: column;
+    row-gap: 30px;
+}
+
+
+/* ! comment item end */
+
+
+/* ! comment form start */
+/* ! comment form end */

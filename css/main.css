@@ -17,7 +17,7 @@
 @import url(components/single-products/breadcrumb.css);
 @import url(components/single-products/product-gallery.css);
 @import url(components/single-products/product-info.css);
-
+@import url(components/single-products/product-tabs.css);
 
 /* ! pages */
 @import url(pages/home.css);

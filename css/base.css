@@ -79,13 +79,13 @@ button {
     border-color: #1367ef
 }
 
-.btn-red{
+.btn-red {
     background-color: #ee403d;
     color: #fff;
     border-color: #ee403d
 }
 
-.btn-black{
+.btn-black {
     background-color: #000000;
     color: #fff;
     border-color: #000000
@@ -96,7 +96,14 @@ button {
     color: #1367ef;
 }
 
-textarea{
+.btn-submit {
+    background-color: #000;
+    color: #fff;
+    cursor: pointer;
+    padding: 0 40px;
+}
+
+textarea {
     overflow: auto;
 }
 
@@ -115,7 +122,7 @@ input[type="text"]:focus,
 input[type="password"]:focus,
 input[type="number"]:focus,
 input[type="email"]:focus,
-textarea:focus{
+textarea:focus {
     border-color: gray;
 }
 

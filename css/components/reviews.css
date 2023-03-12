@@ -46,4 +46,77 @@
 
 
 /* ! comment form start */
+
+.tab-panel-reviews span.required {
+    color: #e51414;
+}
+
+
+.tab-panel-reviews .review-form-wrapper h2 {
+    font-size: 16px;
+    font-weight: 500;
+    margin: 20px 0;
+    border-bottom: 1px solid #dee0ea;
+    padding-bottom: 16px;
+}
+
+
+.tab-panel-reviews .comment-notes {
+    font-size: 14px;
+}
+
+
+.tab-panel-reviews .comment-form-rating {
+    margin: 20px 0;
+    font-size: 14px;
+}
+
+.tab-panel-reviews .comment-form-rating .stars {
+    display: flex;
+    align-items: center;
+}
+
+.tab-panel-reviews .comment-form-rating .star {
+    display: flex;
+    align-items: center;
+}
+
+.tab-panel-reviews .comment-form-rating .stars i {
+    font-size: 10px;
+    color: #dee0ea;
+    transition: 0.3s ease color;
+}
+
+.tab-panel-reviews .comment-form-rating .star:not(:last-child):after {
+    content: " | ";
+    padding: 0 10px;
+    font-size: 20px;
+    color: #dee0ea;
+}
+
+.tab-panel-reviews .comment-form-rating .stars a:hover i {
+    color: gold;
+}
+
+.comment-form .form-comment {
+    display: flex;
+    flex-direction: column;
+    row-gap: 4px;
+    font-size: 14px;
+}
+
+.comment-form .form-comment:not(:first-child) {
+    margin-top: 10px;
+}
+
+.comment-form .comment-form-cookie {
+    display: flex;
+    align-items: center;
+    margin: 10px 0;
+    font-size: 14px;
+    column-gap: 4px;
+}
+
+
+
 /* ! comment form end */

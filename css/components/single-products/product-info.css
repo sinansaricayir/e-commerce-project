@@ -59,6 +59,7 @@
 .site-main .colors .colors-wrapper {
     display: flex;
     column-gap: 5px;
+    margin-left: -1px;
 }
 
 .site-main .colors .color-wrapper {

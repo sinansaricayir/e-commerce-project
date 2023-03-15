@@ -219,13 +219,14 @@
 
 @media(max-width:650px) {
     .header-center {
-        /* display: none; */
         position: fixed;
         top: 0;
         left: -100%;
         background-color: #fff;
         border-right: 1px solid #dee0ea;
         height: 100vh;
+        z-index: 2;
+        transition: 0.5s ease all;
     }
 
     .header-center .menu-list {

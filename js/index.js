@@ -21,6 +21,32 @@ document.addEventListener("click", (event) => {
     }
 })
 /* click outside end */
-
-
 //! home sidebar end
+
+
+
+//! search modal start
+const btnOpenSearch = document.querySelector(".search-button")
+const modalSearch = document.getElementsByClassName("modal-search")
+const modalSearchWrapper = document.getElementsByClassName("modal-wrapper")
+const btnCloseModalSearch = document.querySelector("#close-modal-search")
+
+btnOpenSearch.addEventListener("click", function () {
+    modalSearch[0].style.visibility = "visible"
+    modalSearch[0].style.opacity = "1"
+})
+
+btnCloseModalSearch.addEventListener("click", function () {
+    modalSearch[0].style.visibility = "hidden"
+    modalSearch[0].style.opacity = "0"
+
+})
+
+/* click outside start */
+document.addEventListener("click", function (e) {
+    if (!e.composedPath().includes(modalSearchWrapper) && !e.composedPath().includes(btnOpenSearch)) {
+        modalSearch[0].style.visibility = "hidden"
+    }
+})
+/* click outside end */
+//! search modal end

@@ -50,3 +50,42 @@ document.addEventListener("click", function (e) {
 })
 /* click outside end */
 //! search modal end
+
+
+//?-------------------------------------------------------------------------
+
+//! slider start
+
+let sliderIndex = 1
+showSlides()
+
+function plusSlide(n) {
+    showSlides((sliderIndex += n))
+}
+
+
+function showSlides(n) {
+
+    const slides = document.getElementsByClassName("slider-item")
+
+    if (n > slides.length) {
+        sliderIndex = 1
+    }
+
+    if (n == 0) {
+        sliderIndex += slides.length
+    }
+
+
+    for (let i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+    }
+
+    slides[sliderIndex - 1].style.display = "flex"
+
+}
+
+
+
+
+//! slider end

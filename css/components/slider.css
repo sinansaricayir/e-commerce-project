@@ -90,10 +90,29 @@
     opacity: 1;
 }
 
+.slider .slider-dots .slider-dot.active {
+    opacity: 1;
+}
+
 .slider .slider-dots .slider-dot span {
     display: inline-block;
     height: 12px;
     width: 12px;
     border-radius: 100%;
     background-color: #1367ef;
+}
+
+.fade{
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+@keyframes fade{
+    from{
+        opacity: 0.4;
+    }
+
+    to{
+        opacity: 1;
+    }
 }

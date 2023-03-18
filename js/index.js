@@ -56,24 +56,34 @@ document.addEventListener("click", function (e) {
 
 //! slider start
 
-let sliderIndex = 1
-showSlides()
+let slideIndex = 1
+
+showSlides(slideIndex)
+
+setInterval(() => {
+    showSlides(slideIndex += 1)
+}, 3000)
 
 function plusSlide(n) {
-    showSlides((sliderIndex += n))
+    showSlides((slideIndex += n)) // (slideIndex = slideIndex + n )
 }
 
+function currentSlide(n){
+    showSlides(slideIndex = n);
+}
 
 function showSlides(n) {
 
     const slides = document.getElementsByClassName("slider-item")
+    const dots = document.getElementsByClassName("slider-dot")
+
 
     if (n > slides.length) {
-        sliderIndex = 1
+        slideIndex = 1
     }
 
     if (n == 0) {
-        sliderIndex += slides.length
+        slideIndex += slides.length
     }
 
 
@@ -81,8 +91,13 @@ function showSlides(n) {
         slides[i].style.display = "none";
     }
 
-    slides[sliderIndex - 1].style.display = "flex"
+    for (let i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", " ")
+    }
 
+
+    slides[slideIndex - 1].style.display = "flex"
+    dots[slideIndex - 1].className += " active"
 }
 
 

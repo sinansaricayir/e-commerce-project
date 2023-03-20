@@ -23,14 +23,9 @@
 /* ! categories end */
 
 /* ! products start */
+ 
 .products {
     margin-bottom: 40px;
-}
-
-.products .product-list {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    gap: 20px;
 }
 
 /* ! products end */
@@ -268,7 +263,7 @@
 
 
 @media(max-width:578px) {
-  
+
     .contact .contact-bottom .contact-form {
         flex-direction: column;
     }

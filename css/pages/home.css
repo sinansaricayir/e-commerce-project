@@ -104,11 +104,6 @@
 /*  responsive */
 
 @media(max-width:1210px) {
-    .products .product-list {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        gap: 20px;
-    }
 
     .brands .brand-list {
         display: grid;
@@ -273,12 +268,7 @@
 
 
 @media(max-width:578px) {
-    .products .product-list {
-        display: grid;
-        grid-template-columns: 1fr;
-        gap: 20px;
-    }
-
+  
     .contact .contact-bottom .contact-form {
         flex-direction: column;
     }

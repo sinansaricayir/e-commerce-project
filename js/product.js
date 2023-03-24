@@ -1,6 +1,21 @@
 import { product1, product2 } from "./glide.js"
 
 let products = []
+let cart = []
+
+function addToCart() {
+    const buttons = [...document.getElementsByClassName("add-to-cart")]
+    buttons.forEach((button) => {
+        button.addEventListener("click", function (e) {
+            const id = e.target.dataset.id
+            const findProduct = products.find((product) => product.id === Number(id))
+            cart.push({ ...findProduct, quantitiy: 1 })
+            localStorage.setItem("cart", JSON.stringify(cart))
+            button.setAttribute("disabled", "disabled")
+        })
+    })
+}
+
 
 async function productFunc() {
 
@@ -47,7 +62,7 @@ async function productFunc() {
                     </div>
                     <span class="product-discount"> ${product.discount}% </span>
                     <div class="product-links">
-                        <button>
+                        <button class="add-to-cart" data-id="${product.id}">
                         <i class="bi bi-basket-fill"></i>
                         </button>
                         <button>
@@ -64,18 +79,21 @@ async function productFunc() {
             </li>
         `
 
-
     })
+
 
     productsContainer.innerHTML = results
     productsContainer2.innerHTML = results
 
+    addToCart()
 
     product1()
 
     product2()
 
+
 }
+
 
 
 export default productFunc() 

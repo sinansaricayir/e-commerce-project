@@ -10,7 +10,6 @@ async function getData() {
 
 
     data ? localStorage.setItem("products", JSON.stringify(data)) : [] // json to string
-    console.log(JSON.stringify(data));
 
 }
 

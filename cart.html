@@ -26,12 +26,12 @@
             <div class="container">
                 <div class="header-wrapper">
                     <div class="header-mobile">
-                        <i class="bi bi-list"></i>
+                        <i class="bi bi-list" id="btn-menu"></i>
                     </div>
                     <div class="header-left">
                         <a href="/" class="logo">LOGO</a>
                     </div>
-                    <div class="header-center">
+                    <div class="header-center" id="sidebar">
                         <nav class="navigation">
                             <ul class="menu-list">
                                 <li class="menu-list-item">
@@ -120,21 +120,21 @@
                                 </li>
                             </ul>
                         </nav>
-                        <i class="bi-x-circle"></i>
+                        <i class="bi-x-circle" id="close-sidebar"></i>
                     </div>
                     <div class="header-right">
                         <div class="header-right-links">
                             <a href="account.html">
                                 <i class="bi bi-person"></i>
                             </a>
-                            <button class="toggle-button">
+                            <button class="search-button">
                                 <i class="bi bi-search"></i>
                             </button>
                             <a href="#">
                                 <i class="bi bi-heart"></i>
                             </a>
                             <div class="header-cart">
-                                <a href="#" class="header-cart-link">
+                                <a href="cart.html" class="header-cart-link">
                                     <i class="bi bi-bag"></i>
                                     <span class="header-cart-count">0</span>
                                 </a>
@@ -154,9 +154,8 @@
             <p class="modal-text">
                 Start typing to see products you are looking for.
             </p>
-            <form class="search-form">
-                <input type="text" placeholder="Search a product" />
-                <button><i class="bi bi-search"></i></button>
+            <input type="text" placeholder="Search a product" />
+            <button><i class="bi bi-search"></i></button>
             </form>
             <div class="search-result">
                 <div class="search-heading">
@@ -181,7 +180,7 @@
                     </a>
                 </div>
             </div>
-            <i class="bi bi-x-circle"></i>
+            <i class="bi bi-x-circle" id="close-modal-search"></i>
         </div>
     </div>
     <!-- ! modal search end -->
@@ -209,29 +208,8 @@
                                 <th class="product-quantity">Quantity</th>
                                 <th class="product-subtotal">Subtotal</th>
                             </thead>
-                            <tbody class="cart-wrapper">
-                                <tr class="cart-item">
-                                    <td></td>
-                                    <td class="cart-image">
-                                        <img src="img/products/product1/1.png" alt="">
-                                        <i class="bi bi-x delete-cart"></i>
-                                    </td>
-                                    <td>Analogue Resin Strap</td>
-                                    <td>$108.88</td>
-                                    <td>1</td>
-                                    <td>$108.00</td>
-                                </tr>
-                                <tr class="cart-item">
-                                    <td></td>
-                                    <td class="cart-image">
-                                        <img src="img/products/product2/1.png" alt="">
-                                        <i class="bi bi-x delete-cart"></i>
-                                    </td>
-                                    <td>Analogue Resin Strap</td>
-                                    <td>$108.88</td>
-                                    <td>1</td>
-                                    <td>$108.00</td>
-                                </tr>
+                            <tbody class="cart-wrapper" id="cart-product">
+
                             </tbody>
                         </table>
                         <div class="action-wrapper">
@@ -518,6 +496,14 @@
         </div>
     </section>
     <!-- ! footer end -->
+
+    <!-- scripts start -->
+    <script src="js/main.js" type="module"></script>
+    <script src="js/cart.js" type="module"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@glidejs/glide"></script>
+    <script src="js/glide.js" type="module"></script>
+    <!-- scripts end -->
+
 </body>
 
 </html>

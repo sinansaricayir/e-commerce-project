@@ -81,6 +81,7 @@
 
 .cart-form table tbody .cart-item {
     border-bottom: 1px solid #dee0ea;
+    font-size: 14px;
 }
 
 .cart-item .cart-image {

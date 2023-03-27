@@ -1,6 +1,6 @@
 import { product3 } from "./glide.js"
+import { thumbsActiveFunc } from "./single-product/thumbsActive.js"
 
-product3()
 
 const productId = localStorage.getItem("productId")
     ? JSON.parse(localStorage.getItem("productId"))
@@ -28,6 +28,23 @@ const productNewPrice = document.querySelector(".new-price")
 productNewPrice.innerHTML = `$${findProduct.price.newPrice.toFixed(2)}`
 
 /* product gallery */
-
 const singleImage = document.getElementById("single-image")
 singleImage.src = findProduct.img.singleImage
+
+/* gallery thumbs */
+
+const galleryThumbs = document.querySelector(".gallery-thumbs")
+let result = ""
+
+findProduct.img.thumbs.forEach((item) => {
+    result += `
+        <li class="glide__slide">
+            <img src="${item}" class="img-fluid" alt="">
+        </li>
+    `
+})
+
+galleryThumbs.innerHTML = result
+
+thumbsActiveFunc()
+product3()

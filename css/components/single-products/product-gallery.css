@@ -29,7 +29,7 @@
     border-color: #000;
 }
 
-.single-product .gallery-thumbs li img .active {
+.single-product .gallery-thumbs li img.active {
     border-color: #000;
 }
 

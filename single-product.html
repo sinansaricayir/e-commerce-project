@@ -5,7 +5,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>E-Commerce | Home</title>
+    <title>E-Commerce | Product</title>
     <!-- !bootstrap icon -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css" />
     <!-- !Glide.js Css CDN -->
@@ -334,23 +334,23 @@
                 <div class="single-tabs">
                     <ul class="tab-list">
                         <li>
-                            <a href="#" class="tab-button active">
+                            <a href="#" class="tab-button active" data-id="desc">
                                 Descripton
                             </a>
                         </li>
                         <li>
-                            <a href="#" class="tab-button">
+                            <a href="#" class="tab-button" data-id="info">
                                 Additional information
                             </a>
                         </li>
                         <li>
-                            <a href="#" class="tab-button">
+                            <a href="#" class="tab-button" data-id="reviews">
                                 Reviews
                             </a>
                         </li>
                     </ul>
                     <div class="tab-panel">
-                        <div class="tab-panel-descriptions">
+                        <div class="tab-panel-descriptions content" id="desc">
                             <p>
                                 Quisque varius diam vel metus mattis, id aliquam diam rhoncus. Proin vitae magna in dui
                                 finibus malesuada et at nulla. Morbi elit ex, viverra vitae ante vel, blandit feugiat
@@ -369,7 +369,7 @@
                                 vel, dignissim a tortor.
                             </p>
                         </div>
-                        <div class="tab-panel-information">
+                        <div class="tab-panel-information content" id="info">
                             <h3> Additional information
                             </h3>
                             <table>
@@ -393,7 +393,7 @@
                                 </tbody>
                             </table>
                         </div>
-                        <div class="tab-panel-reviews">
+                        <div class="tab-panel-reviews content" id="reviews">
                             <h3>2 reviews for Basic Colored Sweatpants With Elastic Hems
                             </h3>
                             <div class="comments">

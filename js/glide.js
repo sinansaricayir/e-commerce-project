@@ -32,14 +32,8 @@ export function product2() {
         autoplay: 3000,
         breakpoints: {
             992: {
-                perView: 3
-            },
-            768: {
                 perView: 2
-            },
-            576: {
-                perView: 1
-            },
+            }
         }
     }
 
@@ -58,13 +52,7 @@ export function product3() {
         breakpoints: {
             992: {
                 perView: 3
-            },
-            768: {
-                perView: 2
-            },
-            576: {
-                perView: 1
-            },
+            }
         }
     }
 

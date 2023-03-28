@@ -1,5 +1,8 @@
 import { product3 } from "./glide.js"
 import { thumbsActiveFunc } from "./single-product/thumbsActive.js"
+import zoomFunc from "./single-product/zoom.js"
+import colorsFunc from "./single-product/colors.js"
+import valuesFunc from "./single-product/values.js"
 
 
 const productId = localStorage.getItem("productId")
@@ -48,3 +51,35 @@ galleryThumbs.innerHTML = result
 
 thumbsActiveFunc()
 product3()
+
+/* thumbs active */
+const productThumbs = document.querySelectorAll(".product-thumb .glide__slide img")
+productThumbs[0].classList.add("active")
+
+
+
+
+//add to cart
+const cart = localStorage.getItem("cart")
+    ? JSON.parse(localStorage.getItem("cart")) : []
+
+const btnAddCart = document.getElementById("add-to-cart")
+const quantity = document.getElementById("quantity")
+const cartItem = document.querySelector(".header-cart-count")
+
+const findCart = cart.find((item) => item.id === findProduct.id)
+
+if (findCart) {
+    btnAddCart.setAttribute("disabled", "disabled")
+    btnAddCart.style.opacity = 0.4
+    btnAddCart.style.cursor = "no-drop"
+} else {
+    btnAddCart.addEventListener("click", function () {
+        cart.push({ ...findProduct, quantity: Number(quantity.value) })
+        btnAddCart.setAttribute("disabled", "disabled")
+        btnAddCart.style.opacity = 0.4
+        btnAddCart.style.cursor = "no-drop"
+        localStorage.setItem("cart", JSON.stringify(cart))
+        cartItem.innerHTML = cart.length
+    })
+}

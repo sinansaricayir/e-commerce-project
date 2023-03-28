@@ -3,8 +3,16 @@
     padding-right: 15px;
 }
 
+.single-product .single-image-wrapper {
+    display: flex;
+    overflow: hidden;
+}
+
 .single-product .single-image-wrapper img {
     width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transform-origin: center;
 }
 
 .single-product .single-image-wrapper img:hover {
@@ -35,6 +43,7 @@
 
 .single-product .product-thumb {
     position: relative;
+    margin-top: 7px;
 }
 
 

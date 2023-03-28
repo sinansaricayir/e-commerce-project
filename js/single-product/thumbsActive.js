@@ -7,7 +7,6 @@ export function thumbsActiveFunc() {
             thumbs.forEach((image) => {
                 image.classList.remove("active")
             })
-
             singlImage.src = item.src
             item.classList.add("active")
         })

@@ -10,7 +10,7 @@ function displayCartProduct() {
         <tr class="cart-item">
             <td></td>
             <td class="cart-image">
-                <img src="${item.img.singleImage}" alt="">
+                <img src="${item.img.singleImage}" alt="" data-id=${item.id} class="cart-product-image">
                 <i class="bi bi-x delete-cart" data-id=${item.id}></i>
             </td>
             <td>${item.name}</td>
@@ -24,8 +24,20 @@ function displayCartProduct() {
     removeCartItem()
 }
 
-
 displayCartProduct()
+
+function cartProductRoute() {
+    const images = document.querySelectorAll(".cart-product-image")
+    images.forEach((image) => {
+        image.addEventListener("click", (e) => {
+            const imageId = e.target.dataset.id
+            localStorage.setItem("productId", Number(imageId))
+            window.location.href = "single-product.html"
+        })
+    })
+}
+
+cartProductRoute()
 
 
 function removeCartItem() {

@@ -63,6 +63,10 @@
     text-align: center;
 }
 
+.cart-image .cart-product-image {
+    cursor: pointer;
+}
+
 .cart-form table {
     border-collapse: collapse;
     width: 100%;

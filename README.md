@@ -7,4 +7,5 @@ No framework or library (except glide.js) was used throughout the project.
 
 
 You can reach the live link of the project from the link below.
+
 Link : https://commerce-project.netlify.app/

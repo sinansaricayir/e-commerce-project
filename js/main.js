@@ -1,5 +1,6 @@
 import headerFunc from "./header.js"
 import productFunc from "./product.js"
+import searchFunc from "./search.js"
 
 //! add product to localstorage start
 
@@ -11,6 +12,7 @@ import productFunc from "./product.js"
 
     data ? localStorage.setItem("products", JSON.stringify(data)) : [] // json to string
     productFunc()
+    searchFunc(data)
 
 }
 )()

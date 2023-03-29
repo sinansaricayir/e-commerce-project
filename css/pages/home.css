@@ -23,7 +23,7 @@
 /* ! categories end */
 
 /* ! products start */
- 
+
 .products {
     margin-bottom: 40px;
 }
@@ -280,6 +280,8 @@
 
 
 @media(max-width:403px) {
+
+
     .brands .brand-list {
         display: flex;
         flex-direction: column;

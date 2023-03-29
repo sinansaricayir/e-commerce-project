@@ -47,6 +47,20 @@
     border-bottom: 1px solid #dee0ea;
 }
 
+.modal-wrapper .search {
+    display: flex;
+}
+
+
+.modal-wrapper .search input {
+    width: 90%;
+}
+
+.modal-wrapper .search button {
+    width: 10%;
+
+}
+
 .modal-search .search-form {
     margin-top: 15px;
     display: flex;
@@ -150,5 +164,7 @@
     font-size: 20px;
     cursor: pointer;
 }
+
+
 
 /* ! modal search end */

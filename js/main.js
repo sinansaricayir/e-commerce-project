@@ -30,3 +30,31 @@ cartItem.innerHTML = localStorage.getItem("cart")
     : "0"
 
 //! add cartItem to localstorage end
+
+
+//! modal dialog start
+
+const modal = document.querySelector(".modal-dialog")
+const modalContent = document.querySelector(".modal-dialog .modal-content")
+const btnModalClose = document.querySelector(".modal-dialog .modal-close")
+
+
+btnModalClose.addEventListener("click", () => {
+    modal.classList.remove("show")
+})
+
+
+document.addEventListener("click", (e) => {
+    if (!e.composedPath().includes(modalContent)) {
+        modal.classList.remove("show")
+    }
+})
+
+
+setTimeout(() => {
+    modal.classList.add("show")
+}, 3000)
+
+
+
+//! modal dialog end

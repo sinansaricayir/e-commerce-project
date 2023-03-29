@@ -26,16 +26,16 @@
             <div class="container">
                 <div class="header-wrapper">
                     <div class="header-mobile">
-                        <i class="bi bi-list"></i>
+                        <i class="bi bi-list" id="btn-menu"></i>
                     </div>
                     <div class="header-left">
                         <a href="/" class="logo">LOGO</a>
                     </div>
-                    <div class="header-center">
+                    <div class="header-center" id="sidebar">
                         <nav class="navigation">
                             <ul class="menu-list">
                                 <li class="menu-list-item">
-                                    <a href="/" class="menu-link active">Home
+                                    <a href="/" class="menu-link">Home
                                         <i class="bi bi-chevron-down"></i>
                                     </a>
                                     <div class="menu-dropdown-wrapper">
@@ -112,7 +112,7 @@
                                     </div>
                                 </li>
                                 <li class="menu-list-item">
-                                    <a href="blog.html" class="menu-link">Blog
+                                    <a href="blog.html" class="menu-link active">Blog
                                     </a>
                                 </li>
                                 <li class="menu-list-item">
@@ -120,14 +120,14 @@
                                 </li>
                             </ul>
                         </nav>
-                        <i class="bi-x-circle"></i>
+                        <i class="bi-x-circle" id="close-sidebar"></i>
                     </div>
                     <div class="header-right">
                         <div class="header-right-links">
                             <a href="account.html">
                                 <i class="bi bi-person"></i>
                             </a>
-                            <button class="toggle-button">
+                            <button class="search-button">
                                 <i class="bi bi-search"></i>
                             </button>
                             <a href="#">
@@ -154,37 +154,55 @@
             <p class="modal-text">
                 Start typing to see products you are looking for.
             </p>
-            <form class="search-form">
+            <div class="search">
                 <input type="text" placeholder="Search a product" />
                 <button><i class="bi bi-search"></i></button>
+            </div>
             </form>
             <div class="search-result">
                 <div class="search-heading">
                     <h3>RESULT FROM PRODUCT</h3>
                 </div>
                 <div class="results">
-                    <a href="#" class="result-item">
-                        <img src="img/products/product1/1.png" class="search-thumb" alt="" />
-                        <div class="search-info">
-                            <h4>Analogue Resin Strap</h4>
-                            <span class="search-sku">SKU : PD0016</span>
-                            <span class="search-price">$108.00</span>
-                        </div>
-                    </a>
-                    <a href="#" class="result-item">
-                        <img src="img/products/product2/1.png" class="search-thumb" alt="" />
-                        <div class="search-info">
-                            <h4>Analogue Resin Strap</h4>
-                            <span class="search-sku">SKU : PD0016</span>
-                            <span class="search-price">$108.00</span>
-                        </div>
-                    </a>
+
                 </div>
             </div>
-            <i class="bi bi-x-circle"></i>
+            <i class="bi bi-x-circle" id="close-modal-search"></i>
         </div>
     </div>
     <!-- ! modal search end -->
+
+    <!-- ! modal dialog start -->
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-close">
+                <i class="bi bi-x"></i>
+            </div>
+            <div class="modal-image">
+                <img src="img/modal-dialog.jpg" alt="modal">
+            </div>
+            <div class="popup-wrapper">
+                <div class="popup-content">
+                    <div class="popup-title">
+                        <h3>NEWSLETTER</h3>
+                    </div>
+                    <p class="popup-text">
+                        Sign up to our newsletter and get exclusive deals you won find any where else straight to your
+                        inbox!
+                    </p>
+                    <form class="popup-form">
+                        <input type="text" placeholder="Enter Email Address Here">
+                        <button class="btn btn-primary">SUBSCRIBE</button>
+                        <label>
+                            <input type="checkbox">
+                            <span>Don't show this popup again</span>
+                        </label>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- ! modal dialog end -->
 
     <!-- ! blogs start  -->
     <section class="blogs blog-page">
@@ -195,7 +213,7 @@
             </div>
             <ul class="blog-list">
                 <li class="blog-item">
-                    <a href="#" class="blog-image">
+                    <a href="single-blog.html" class="blog-image">
                         <img src="img/blogs/blog1.jpg" alt="" />
                     </a>
                     <div class="blog-info">
@@ -213,7 +231,7 @@
                     </div>
                 </li>
                 <li class="blog-item">
-                    <a href="#" class="blog-image">
+                    <a href="single-blog.html" class="blog-image">
                         <img src="img/blogs/blog2.jpg" alt="" />
                     </a>
                     <div class="blog-info">
@@ -231,7 +249,7 @@
                     </div>
                 </li>
                 <li class="blog-item">
-                    <a href="#" class="blog-image">
+                    <a href="single-blog.html" class="blog-image">
                         <img src="img/blogs/blog3.jpg" alt="" />
                     </a>
                     <div class="blog-info">
@@ -249,7 +267,7 @@
                     </div>
                 </li>
                 <li class="blog-item">
-                    <a href="#" class="blog-image">
+                    <a href="single-blog.html" class="blog-image">
                         <img src="img/blogs/blog4.jpg" alt="" />
                     </a>
                     <div class="blog-info">
@@ -267,7 +285,7 @@
                     </div>
                 </li>
                 <li class="blog-item">
-                    <a href="#" class="blog-image">
+                    <a href="single-blog.html" class="blog-image">
                         <img src="img/blogs/blog5.jpg" alt="" />
                     </a>
                     <div class="blog-info">
@@ -285,7 +303,7 @@
                     </div>
                 </li>
                 <li class="blog-item">
-                    <a href="#" class="blog-image">
+                    <a href="single-blog.html" class="blog-image">
                         <img src="img/blogs/blog6.jpg" alt="" />
                     </a>
                     <div class="blog-info">
@@ -533,6 +551,10 @@
         </div>
     </section>
     <!-- ! footer end -->
+
+    <!-- scripts start -->
+    <script src="js/main.js" type="module"></script>
+    <!-- scripts end -->
 </body>
 
 </html>

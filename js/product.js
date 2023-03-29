@@ -1,13 +1,11 @@
 import { product1, product2 } from "./glide.js"
 
-let products = localStorage.getItem("products") ?
-    JSON.parse(localStorage.getItem("products")) : []
 
 export let cart = localStorage.getItem("cart")
     ? JSON.parse(localStorage.getItem("cart")) : []
 
 
-function addToCart() {
+function addToCart(products) {
     const cartItem = document.querySelector(".header-cart-count")
     const buttons = [...document.getElementsByClassName("add-to-cart")]
     buttons.forEach((button) => {
@@ -39,7 +37,7 @@ function productRoute() {
     })
 }
 
-async function productFunc() {
+async function productFunc(products) {
 
 
     const productsContainer = document.getElementById("product-list")
@@ -102,7 +100,7 @@ async function productFunc() {
     productsContainer ? productsContainer.innerHTML = results : ""
     productsContainer ? productsContainer2.innerHTML = results : ""
 
-    addToCart()
+    addToCart(products)
 
     product1()
 

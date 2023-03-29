@@ -38,7 +38,7 @@
                         <nav class="navigation">
                             <ul class="menu-list">
                                 <li class="menu-list-item">
-                                    <a href="/" class="menu-link active">Home
+                                    <a href="/" class="menu-link">Home
                                         <i class="bi bi-chevron-down"></i>
                                     </a>
                                     <div class="menu-dropdown-wrapper">
@@ -56,7 +56,7 @@
                                     </div>
                                 </li>
                                 <li class="menu-list-item megamenu-wrapper">
-                                    <a href="shop.html" class="menu-link">Shop
+                                    <a href="shop.html" class="menu-link active">Shop
                                         <i class="bi bi-chevron-down"></i>
                                     </a>
                                     <div class="menu-dropdown-wrapper">
@@ -157,36 +157,55 @@
             <p class="modal-text">
                 Start typing to see products you are looking for.
             </p>
-            <input type="text" placeholder="Search a product" />
-            <button><i class="bi bi-search"></i></button>
+            <div class="search">
+                <input type="text" placeholder="Search a product" />
+                <button><i class="bi bi-search"></i></button>
+            </div>
             </form>
             <div class="search-result">
                 <div class="search-heading">
                     <h3>RESULT FROM PRODUCT</h3>
                 </div>
                 <div class="results">
-                    <a href="#" class="result-item">
-                        <img src="img/products/product1/1.png" class="search-thumb" alt="" />
-                        <div class="search-info">
-                            <h4>Analogue Resin Strap</h4>
-                            <span class="search-sku">SKU : PD0016</span>
-                            <span class="search-price">$108.00</span>
-                        </div>
-                    </a>
-                    <a href="#" class="result-item">
-                        <img src="img/products/product2/1.png" class="search-thumb" alt="" />
-                        <div class="search-info">
-                            <h4>Analogue Resin Strap</h4>
-                            <span class="search-sku">SKU : PD0016</span>
-                            <span class="search-price">$108.00</span>
-                        </div>
-                    </a>
+
                 </div>
             </div>
             <i class="bi bi-x-circle" id="close-modal-search"></i>
         </div>
     </div>
     <!-- ! modal search end -->
+
+    <!-- ! modal dialog start -->
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-close">
+                <i class="bi bi-x"></i>
+            </div>
+            <div class="modal-image">
+                <img src="img/modal-dialog.jpg" alt="modal">
+            </div>
+            <div class="popup-wrapper">
+                <div class="popup-content">
+                    <div class="popup-title">
+                        <h3>NEWSLETTER</h3>
+                    </div>
+                    <p class="popup-text">
+                        Sign up to our newsletter and get exclusive deals you won find any where else straight to your
+                        inbox!
+                    </p>
+                    <form class="popup-form">
+                        <input type="text" placeholder="Enter Email Address Here">
+                        <button class="btn btn-primary">SUBSCRIBE</button>
+                        <label>
+                            <input type="checkbox">
+                            <span>Don't show this popup again</span>
+                        </label>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- ! modal dialog end -->
 
     <!-- ! single product start -->
     <section class="single-product">

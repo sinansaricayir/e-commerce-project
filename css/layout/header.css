@@ -14,7 +14,11 @@
 
 header {
     border-bottom: 1px solid #dee0ea;
-    position: relative;
+    position: sticky;
+    width: 100%;
+    z-index: 10;
+    background-color: #fff;
+    top: 0;
 }
 
 .header-row {

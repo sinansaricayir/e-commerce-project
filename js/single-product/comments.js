@@ -47,7 +47,6 @@ const addNewCommentFunc = () => {
                         </li>
                     `
         }
-        console.log(stars);
 
         let result = ""
         comments.push({ text: text, name: name })

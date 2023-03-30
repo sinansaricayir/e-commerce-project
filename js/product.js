@@ -37,6 +37,19 @@ function productRoute() {
     })
 }
 
+
+function productImageRoute() {
+    const productImageLink = document.querySelectorAll(".product-image a .img2")
+    productImageLink.forEach((item) => {
+        item.addEventListener("click", (e) => {
+            e.preventDefault()
+            const id = e.target.dataset.id
+            localStorage.setItem("productId", JSON.stringify(id))
+            window.location.href = "single-product.html"
+        })
+    })
+}
+
 async function productFunc(products) {
 
 
@@ -48,10 +61,10 @@ async function productFunc(products) {
         results += `
                 <li class="product-item glide__slide">
                     <div class="product-image">
-                    <a href="#">
-                        <img src="${product.img.singleImage}" alt="" class="img1" />
-                        <img src="${product.img.thumbs[1]}" alt="" class="img2" />
-                    </a>
+                        <a href="" >
+                            <img src="${product.img.singleImage}" alt="" class="img1" />
+                            <img src="${product.img.thumbs[1]}" alt="" class="img2" data-id="${product.id}" />
+                        </a>
                     </div>
                     <div class="product-info">
                     <a href="#" class="product-title"> ${product.name} </a>
@@ -108,6 +121,7 @@ async function productFunc(products) {
 
     productRoute()
 
+    productImageRoute()
 
 
 }

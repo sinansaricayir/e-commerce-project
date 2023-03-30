@@ -39,21 +39,27 @@ const modalContent = document.querySelector(".modal-dialog .modal-content")
 const btnModalClose = document.querySelector(".modal-dialog .modal-close")
 
 
-btnModalClose.addEventListener("click", () => {
-    modal.classList.remove("show")
-})
-
-
-document.addEventListener("click", (e) => {
-    if (!e.composedPath().includes(modalContent)) {
+if (btnModalClose) {
+    btnModalClose.addEventListener("click", () => {
         modal.classList.remove("show")
-    }
-})
+    })
+}
 
 
-setTimeout(() => {
-    modal.classList.add("show")
-}, 3000)
+if (modal) {
+    document.addEventListener("click", (e) => {
+        if (!e.composedPath().includes(modalContent)) {
+            modal.classList.remove("show")
+        }
+    })
+}
+
+
+if (modal) {
+    setTimeout(() => {
+        modal.classList.add("show")
+    }, 3000)
+}
 
 
 
